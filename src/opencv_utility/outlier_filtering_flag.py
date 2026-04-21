@@ -6,7 +6,6 @@ class OpenCVOutlierFilteringFlag(Enum):
     """
     Enhanced outlier filtering flags for OpenCV, including modern USAC variants.
     """
-    NONE = "none"
     RANSAC = "ransac"
     LMEDS = "lmeds"
     RHO = "rho"
@@ -27,8 +26,6 @@ class OpenCVOutlierFilteringFlag(Enum):
         Get the flag for general functions like cv2.findHomography or cv2.solvePnPRansac.
         """
         match self:
-            case self.NONE:
-                return 0
             case self.RANSAC:
                 return cv2.RANSAC
             case self.LMEDS:
@@ -59,8 +56,6 @@ class OpenCVOutlierFilteringFlag(Enum):
         Get the flag specifically for cv2.findFundamentalMat.
         """
         match self:
-            case self.NONE:
-                return 0
             case self.RANSAC:
                 return cv2.FM_RANSAC
             case self.LMEDS:
