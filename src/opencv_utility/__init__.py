@@ -1,3 +1,3 @@
-from .outlier_filtering_flag import OpenCVOutlierFilteringFlag
+from .flag import OpenCVInterpolationFlag, OpenCVOutlierFilteringFlag
 
-__all__ = ["OpenCVOutlierFilteringFlag"]
+__all__ = ["OpenCVInterpolationFlag", "OpenCVOutlierFilteringFlag"]
