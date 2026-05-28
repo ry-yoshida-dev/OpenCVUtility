@@ -24,8 +24,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/ry-yoshida-private/OpenCVUtility"
-"Bug Tracker" = "https://github.com/ry-yoshida-private/OpenCVUtility/issues"
+"Homepage" = "https://github.com/ry-yoshida-dev/OpenCVUtility"
+"Bug Tracker" = "https://github.com/ry-yoshida-dev/OpenCVUtility/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
